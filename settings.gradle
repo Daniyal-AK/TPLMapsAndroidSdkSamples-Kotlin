@@ -1,0 +1,24 @@
+include ':samples'
+
+/*def basePath = "/mnt/848AFDBB8AFDAA36/Development/Workspaces/AndroidStudioProjects/tplmaps/tangram-core/tangram-core-sdk/tplmaps3d/tplmaps-android-sdk/"
+include ':maps'
+project(':maps').projectDir = new File(basePath + "/maps")
+include ':places'
+project(':places').projectDir = new File(basePath + "/places")
+include ':routing'
+project(':routing').projectDir = new File(basePath + "/routing")*/
+
+
+//Maps
+def basePath = "J:/TPL-MAPS/SDK/SDK_WORK/tangram-platform-sdk"
+include ':maps'
+project(':maps').projectDir = new File(basePath + "/maps")
+
+include ':places'
+project(':places').projectDir = new File(basePath + "/places")
+
+include ':routing'
+project(':routing').projectDir = new File(basePath + "/routing")
+
+
+

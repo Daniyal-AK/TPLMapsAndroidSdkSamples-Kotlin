@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/TPLMapsAndroidSdkSamples-master.iml" filepath="$PROJECT_DIR$/.idea/TPLMapsAndroidSdkSamples-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-539318775/TPLMapsAndroidSdkSamples-master.maps.iml" filepath="$PROJECT_DIR$/.idea/modules/-539318775/TPLMapsAndroidSdkSamples-master.maps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-539318775/TPLMapsAndroidSdkSamples-master.maps.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-539318775/TPLMapsAndroidSdkSamples-master.maps.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-539318775/TPLMapsAndroidSdkSamples-master.maps.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-539318775/TPLMapsAndroidSdkSamples-master.maps.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-539318775/TPLMapsAndroidSdkSamples-master.maps.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/-539318775/TPLMapsAndroidSdkSamples-master.maps.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1501287230/TPLMapsAndroidSdkSamples-master.places.iml" filepath="$PROJECT_DIR$/.idea/modules/1501287230/TPLMapsAndroidSdkSamples-master.places.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1501287230/TPLMapsAndroidSdkSamples-master.places.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1501287230/TPLMapsAndroidSdkSamples-master.places.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1501287230/TPLMapsAndroidSdkSamples-master.places.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1501287230/TPLMapsAndroidSdkSamples-master.places.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1501287230/TPLMapsAndroidSdkSamples-master.places.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1501287230/TPLMapsAndroidSdkSamples-master.places.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1175139348/TPLMapsAndroidSdkSamples-master.routing.iml" filepath="$PROJECT_DIR$/.idea/modules/1175139348/TPLMapsAndroidSdkSamples-master.routing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1175139348/TPLMapsAndroidSdkSamples-master.routing.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1175139348/TPLMapsAndroidSdkSamples-master.routing.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1175139348/TPLMapsAndroidSdkSamples-master.routing.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1175139348/TPLMapsAndroidSdkSamples-master.routing.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1175139348/TPLMapsAndroidSdkSamples-master.routing.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1175139348/TPLMapsAndroidSdkSamples-master.routing.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/samples/TPLMapsAndroidSdkSamples-master.samples.iml" filepath="$PROJECT_DIR$/.idea/modules/samples/TPLMapsAndroidSdkSamples-master.samples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/samples/TPLMapsAndroidSdkSamples-master.samples.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/samples/TPLMapsAndroidSdkSamples-master.samples.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/samples/TPLMapsAndroidSdkSamples-master.samples.main.iml" filepath="$PROJECT_DIR$/.idea/modules/samples/TPLMapsAndroidSdkSamples-master.samples.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/samples/TPLMapsAndroidSdkSamples-master.samples.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/samples/TPLMapsAndroidSdkSamples-master.samples.unitTest.iml" />
+    </modules>
+  </component>
+</project>

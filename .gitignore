@@ -1,0 +1,5 @@
+# Project exclude paths
+/.gradle/
+/samples/build/
+/samples/build/intermediates/javac/debug/classes/
+/samples/build/intermediates/javac/debugAndroidTest/classes/
