@@ -138,7 +138,7 @@ Below are screenshots corresponding to each feature:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/tpl-maps-sample-app.git
+   git clone https://github.com/Daniyal-AK/TPLMapsAndroidSdkSamples-Kotlin.git
    ```
 
 2. Open the project in Android Studio.
@@ -147,9 +147,9 @@ Below are screenshots corresponding to each feature:
 
 4. Add your TPL Maps SDK key in the `AndroidManifest.xml` file:
    ```xml
-   <meta-data
-       android:name="com.tplmaps.sdk.API_KEY"
-       android:value="YOUR_API_KEY" />
+        <meta-data
+            android:name="@string/metadata_name_api_key"
+            android:value=""/>
    ```
 
 5. Run the app on an emulator or physical device.
