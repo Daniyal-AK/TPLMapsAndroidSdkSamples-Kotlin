@@ -312,39 +312,44 @@ searchManager.requestReverse(
 ```
 
 ## Screenshots
-![1](https://github.com/user-attachments/assets/6423dbb1-14ba-414c-82aa-a9463c8f7811)
+![Screenshot_20240913_123432](https://github.com/user-attachments/assets/4f44c230-2bc7-476b-ae83-a642df541c7a)
+
 
 Below are screenshots corresponding to each feature:
 
 1. **Maps** - Where the map is shown.
-  
+  ![2](https://github.com/user-attachments/assets/369bf0f5-a3ef-4af9-ac46-d937fb096d16)
+
 
 2. **Map Features** - Night Mode, Buildings, POIs, Live Traffic, etc.
-   ![Map Features Screenshot](path_to_screenshot)
+![3](https://github.com/user-attachments/assets/a364712c-336e-4df6-9537-883ce7dfb5fc)
 
 3. **UI Controls** - Compass, Zoom Controls, My Location, etc.
-   ![UI Controls Screenshot](path_to_screenshot)
+![Screenshot_20240913_123323](https://github.com/user-attachments/assets/a72254d4-0949-4b0f-9578-c0ef20109bd9)
 
-4. **Camera Controls** - Zooming the camera to specific bounds.
-   ![Camera Controls Screenshot](path_to_screenshot)
+5. **Camera Controls** - Zooming the camera to specific bounds.
+   ![4](https://github.com/user-attachments/assets/65f6884f-7337-4eb3-aac9-e8af3370ca12)
 
-5. **Map Gestures** - Various map gestures such as double-tap zoom, pan, rotate.
-   ![Map Gestures Screenshot](path_to_screenshot)
 
-6. **Search Location by Lat/Lng** - Locate a position using coordinates.
-   ![Search Location Screenshot](path_to_screenshot)
+6. **Map Gestures** - Various map gestures such as double-tap zoom, pan, rotate.
+   ![5](https://github.com/user-attachments/assets/c380d0a5-59bf-45bc-8f0c-b18422a04568)
 
-7. **Routing** - Route calculation and display.
-   ![Routing Screenshot](path_to_screenshot)
 
-8. **Info Window** - Info window displayed on marker tap.
-   ![Info Window Screenshot](path_to_screenshot)
+7. **Search Location by Lat/Lng** - Locate a position using coordinates.
+   ![6](https://github.com/user-attachments/assets/2daf857a-6e95-4788-b29b-163d1c6cd6e5)
 
-9. **Map Style** - Apply different map styles like Night Mode.
-   ![Map Style Screenshot](path_to_screenshot)
+
+8. **Routing** - Route calculation and display.
+   ![7](https://github.com/user-attachments/assets/5ec4384f-8aed-4e01-bc13-a337a44cd624)
+
+
+9. **Info Window** - Info window displayed on marker tap.
+   ![8](https://github.com/user-attachments/assets/2e235364-3294-482b-a016-62f641588ab8)
+
 
 10. **Locate Me Demo** - Current location tracking with additional features.
-    ![Locate Me Screenshot](path_to_screenshot)
+    ![9](https://github.com/user-attachments/assets/6cb85419-0128-4143-becf-637a0024c96b)
+
 
 ## Getting Started
 
