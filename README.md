@@ -61,7 +61,8 @@ Here is an overview of the flow for adding UI controls (Compass, Zoom Controls, 
             } catch (e: SecurityException) {
                 e.printStackTrace()
             }
-        }```
+        }
+```
 
 
 
