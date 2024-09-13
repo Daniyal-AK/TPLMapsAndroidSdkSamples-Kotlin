@@ -312,7 +312,7 @@ searchManager.requestReverse(
 ```
 
 ## Screenshots
-![1](https://github.com/user-attachments/assets/ac2b3238-00ab-4b86-af0a-ff896fd2c9fd)
+![1](https://github.com/user-attachments/assets/6423dbb1-14ba-414c-82aa-a9463c8f7811)
 
 Below are screenshots corresponding to each feature:
 
