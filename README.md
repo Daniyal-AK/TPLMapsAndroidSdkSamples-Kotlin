@@ -319,19 +319,19 @@ searchManager.requestReverse(
 
 Below are screenshots corresponding to each feature:
 
-1. **Maps** - Where the map is shown.
+### 1. **Maps** - Where the map is shown.
   ![2](https://github.com/user-attachments/assets/369bf0f5-a3ef-4af9-ac46-d937fb096d16)
 
 
 ---
 
-2. **Map Features** - Night Mode, Buildings, POIs, Live Traffic, etc.
+### 2. **Map Features** - Night Mode, Buildings, POIs, Live Traffic, etc.
 ![3](https://github.com/user-attachments/assets/a364712c-336e-4df6-9537-883ce7dfb5fc)
 
 
 ---
 
-3. **UI Controls** - Compass, Zoom Controls, My Location, etc.
+### 3. **UI Controls** - Compass, Zoom Controls, My Location, etc.
 ![Screenshot_20240913_123323](https://github.com/user-attachments/assets/a72254d4-0949-4b0f-9578-c0ef20109bd9)
 
 
