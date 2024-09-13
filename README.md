@@ -312,13 +312,12 @@ searchManager.requestReverse(
 ```
 
 ## Screenshots
-![image](https://github.com/user-attachments/assets/183a50ce-85ab-4092-96ba-94cb58f7f3d0)
+![1](https://github.com/user-attachments/assets/ac2b3238-00ab-4b86-af0a-ff896fd2c9fd)
 
 Below are screenshots corresponding to each feature:
 
 1. **Maps** - Where the map is shown.
-   ![Map View Screenshot]![image](https://github.com/user-attachments/assets/25e39981-bf22-43df-b4d8-75a42473ebdc)
-)
+  
 
 2. **Map Features** - Night Mode, Buildings, POIs, Live Traffic, etc.
    ![Map Features Screenshot](path_to_screenshot)
