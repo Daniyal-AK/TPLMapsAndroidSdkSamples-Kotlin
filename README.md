@@ -33,63 +33,36 @@ Here is an overview of the flow for adding UI controls (Compass, Zoom Controls, 
 
 ---
 
-**Steps to Implement:**
+```kotlin
+{
+            R.id.cb_compass ->                 // Show compass
+                if (mMapController != null) mMapController!!.uiSettings.showCompass(isChecked)
 
-a. **Initialize MapView and MapController:**
-   - Retrieve the `MapView` from the layout and call `loadMapAsync` to initialize the map asynchronously.
-   - Implement the `onMapReady()` method to handle when the `MapController` is ready for interaction.
+            R.id.cb_zoom_controls ->                 // Show zoom controls
+                if (mMapController != null) mMapController!!.uiSettings.showZoomControls(isChecked)
 
-   ```kotlin
-   mMapView.loadMapAsync(this)
-   ```
+            R.id.cb_my_location_updates -> try {
+                if (mMapController != null) {
+                    // Enable/Disable My Location
+                    mMapController!!.setMyLocationEnabled(
+                        isChecked,
+                        MapController.MyLocationArg.ZOOM_LOCATION_ON_FIRST_FIX
+                    )
+                }
+            } catch (e: SecurityException) {
+                e.printStackTrace()
+            }
 
-b. **Setting Map Properties:**
-   - Configure map features such as maximum tilt and location settings once the `MapController` is initialized in `onMapReady()`.
+            R.id.cb_my_location_button -> try {
+                // Show My Location Button
+                if (mMapController != null) mMapController!!.uiSettings.showMyLocationButton(
+                    isChecked
+                )
+            } catch (e: SecurityException) {
+                e.printStackTrace()
+            }
+        }```
 
-   ```kotlin
-   mapController.setMaxTilt(85f)
-   ```
-
-c. **Location Configuration:**
-   - Configure location settings such as permission requests and enable location updates.
-
-   ```kotlin
-   mapController.locationConfig
-       .setLocationSettings(true)
-       .setPermissionRequestIfDenied(true)
-   ```
-
-d. **UI Controls Implementation:**
-   - Use `CheckBox` elements to control the visibility and functionality of Compass, Zoom Controls, My Location updates, and My Location button.
-   - Implement `onCheckedChanged()` to handle actions when checkboxes are toggled.
-
-   ```kotlin
-   R.id.cb_compass -> mMapController!!.uiSettings.showCompass(isChecked)
-   R.id.cb_zoom_controls -> mMapController!!.uiSettings.showZoomControls(isChecked)
-   ```
-
-e. **Location Updates:**
-   - Add listeners to handle location changes and first location fix.
-   
-   ```kotlin
-   mapController.setOnMyLocationChangeListener(object : MapController.OnMyLocationChangeListener {
-       override fun onMyLocationChanged(location: Location) {
-           Log.d("App", "onMyLocationChanged $location")
-       }
-   })
-   ```
-
-f. **Lifecycle Management:**
-   - Ensure `MapView` lifecycle methods are correctly managed (`onStart()`, `onResume()`, `onPause()`, etc.).
-
-   ```kotlin
-   override fun onStart() {
-       super.onStart()
-       mMapView.onStart()
-   }
-   ```
-
----
 
 
 
