@@ -337,42 +337,42 @@ Below are screenshots corresponding to each feature:
 
 ---
 
-3. **Camera Controls** - Zooming the camera to specific bounds.
+### 3. **Camera Controls** - Zooming the camera to specific bounds.
    ![4](https://github.com/user-attachments/assets/65f6884f-7337-4eb3-aac9-e8af3370ca12)
    
 
 ---
 
 
-5. **Map Gestures** - Various map gestures such as double-tap zoom, pan, and rotate.
+### 5. **Map Gestures** - Various map gestures such as double-tap zoom, pan, and rotate.
    ![5](https://github.com/user-attachments/assets/c380d0a5-59bf-45bc-8f0c-b18422a04568)
    
 
 ---
 
 
-6. **Search Location by Lat/Lng** - Locate a position using coordinates.
+### 6. **Search Location by Lat/Lng** - Locate a position using coordinates.
    ![6](https://github.com/user-attachments/assets/2daf857a-6e95-4788-b29b-163d1c6cd6e5)
 
 
 ---
 
 
-7. **Routing** - Route calculation and display.
+### 7. **Routing** - Route calculation and display.
    ![7](https://github.com/user-attachments/assets/5ec4384f-8aed-4e01-bc13-a337a44cd624)
 
 
 ---
 
 
-8. **Info Window** - Info window displayed on marker tap.
+### 8. **Info Window** - Info window displayed on marker tap.
    ![8](https://github.com/user-attachments/assets/2e235364-3294-482b-a016-62f641588ab8)
 
 
 ---
 
 
-9. **Locate Me Demo** - Current location tracking with additional features.
+### 9. **Locate Me Demo** - Current location tracking with additional features.
     ![9](https://github.com/user-attachments/assets/6cb85419-0128-4143-becf-637a0024c96b)
     
 
