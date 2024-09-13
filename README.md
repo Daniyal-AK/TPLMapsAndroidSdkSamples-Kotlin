@@ -314,6 +314,8 @@ searchManager.requestReverse(
 ## Screenshots
 ![Screenshot_20240913_123432](https://github.com/user-attachments/assets/4f44c230-2bc7-476b-ae83-a642df541c7a)
 
+---
+
 
 Below are screenshots corresponding to each feature:
 
@@ -321,34 +323,60 @@ Below are screenshots corresponding to each feature:
   ![2](https://github.com/user-attachments/assets/369bf0f5-a3ef-4af9-ac46-d937fb096d16)
 
 
+---
+
 2. **Map Features** - Night Mode, Buildings, POIs, Live Traffic, etc.
 ![3](https://github.com/user-attachments/assets/a364712c-336e-4df6-9537-883ce7dfb5fc)
+
+
+---
 
 3. **UI Controls** - Compass, Zoom Controls, My Location, etc.
 ![Screenshot_20240913_123323](https://github.com/user-attachments/assets/a72254d4-0949-4b0f-9578-c0ef20109bd9)
 
-5. **Camera Controls** - Zooming the camera to specific bounds.
+
+---
+
+3. **Camera Controls** - Zooming the camera to specific bounds.
    ![4](https://github.com/user-attachments/assets/65f6884f-7337-4eb3-aac9-e8af3370ca12)
+   
+
+---
 
 
-6. **Map Gestures** - Various map gestures such as double-tap zoom, pan, rotate.
+5. **Map Gestures** - Various map gestures such as double-tap zoom, pan, and rotate.
    ![5](https://github.com/user-attachments/assets/c380d0a5-59bf-45bc-8f0c-b18422a04568)
+   
+
+---
 
 
-7. **Search Location by Lat/Lng** - Locate a position using coordinates.
+6. **Search Location by Lat/Lng** - Locate a position using coordinates.
    ![6](https://github.com/user-attachments/assets/2daf857a-6e95-4788-b29b-163d1c6cd6e5)
 
 
-8. **Routing** - Route calculation and display.
+---
+
+
+7. **Routing** - Route calculation and display.
    ![7](https://github.com/user-attachments/assets/5ec4384f-8aed-4e01-bc13-a337a44cd624)
 
 
-9. **Info Window** - Info window displayed on marker tap.
+---
+
+
+8. **Info Window** - Info window displayed on marker tap.
    ![8](https://github.com/user-attachments/assets/2e235364-3294-482b-a016-62f641588ab8)
 
 
-10. **Locate Me Demo** - Current location tracking with additional features.
+---
+
+
+9. **Locate Me Demo** - Current location tracking with additional features.
     ![9](https://github.com/user-attachments/assets/6cb85419-0128-4143-becf-637a0024c96b)
+    
+
+---
 
 
 ## Getting Started
