@@ -197,7 +197,17 @@ mMapView.setOnMapClickListener {
 - Easily locate places programmatically.
 
 ```kotlin
-mapController.searchByLatLng(latitude, longitude)
+        binding.ivSearch.setOnClickListener(View.OnClickListener {
+            // Request for query after initializing SearchManager
+            // put your query string with location to get your nearer results first
+            //,
+            searchManager!!.request(
+                builder()
+                    .query(etSearch.text.toString())
+                    .location(islamabad)
+                    .build(), this
+            )
+        })
 ```
 
 ### 7. **Routing**
@@ -205,7 +215,20 @@ mapController.searchByLatLng(latitude, longitude)
 - Perfect for guiding users through directions or route planning.
 
 ```kotlin
-mapController.calculateRoute(startLatLng, endLatLng)
+        // Initiating TPLRouteManager instance
+        mRouteManager = TPLRouteManager()
+        mRouteManager!!.onCreate(this)
+  findViewById<View>(R.id.calculate).setOnClickListener { view: View? ->
+            val source = (findViewById<View>(R.id.source) as EditText).text.toString()
+            val destination = (findViewById<View>(R.id.destination) as EditText).text.toString()
+            calculateRoute(mMapController, source, destination)
+        }
+   // Getting MapView resource from layout
+        mMapView = findViewById(R.id.map)
+        // Calling MapView's onCreate() lifecycle method
+        mMapView.onCreate(savedInstanceState)
+        // Loading map Asynchronously vie registering call
+        mMapView.loadMapAsync(this)
 ```
 
 ### 8. **Info Windows**
@@ -213,7 +236,14 @@ mapController.calculateRoute(startLatLng, endLatLng)
 - This is particularly useful for providing additional information when interacting with map markers.
 
 ```kotlin
-mapController.showInfoWindow(marker)
+  val marker1 = mMapController!!.addMarker(
+            MarkerOptions()
+                .position(LngLat(73.093104, 33.730494))
+                .title("marker1")
+                .description("This is my spot!").flat(false).order(1)
+        )
+
+        marker1.showInfoWindow()
 ```
 
 ### 9. **Map Styles**
@@ -221,7 +251,10 @@ mapController.showInfoWindow(marker)
 - Tailor the visual experience of the map to suit your app's needs.
 
 ```kotlin
-mapController.setMapMode(MapMode.NIGHT)
+ private fun setMapStyle(map: MapView?) {
+        // Set style specified in a resource file
+        map!!.setMapStyle(R.raw.sample_map_style1)
+    }
 ```
 
 ### 10. **Locate Me Demo**
@@ -229,7 +262,53 @@ mapController.setMapMode(MapMode.NIGHT)
 - This feature lets users easily find their current position on the map and explore nearby locations.
 
 ```kotlin
-mapController.setMyLocationEnabled(true)
+
+        //Map Zoom-In
+        binding.ibZoomIn.setOnClickListener {
+            mMapController.setZoomBy(
+                mMapController.mapCameraPosition.zoom + 1
+            )
+        }
+
+        // Map Zoom-Out
+        binding.ibZoomOut.setOnClickListener {
+            mMapController.setZoomBy(
+                mMapController.mapCameraPosition.zoom - 1
+            )
+        }
+
+        //Map Current Location
+        binding.ibLocateMe.setOnClickListener {
+            val cameraPosition = CameraPosition(
+                mMapController, com.tplmaps3d.LngLat(
+                    mMapController.getMyLocation(mMapView).longitude,
+                    mMapController.getMyLocation(mMapView).latitude
+                ), 14f, 0f, 0f
+            )
+            mMapController.animateCamera(cameraPosition, 1000)
+        }
+
+searchManager.requestReverse(
+                    builder()
+                        .location(
+                            LngLat(
+                                cameraPosition.position.latitude,
+                                cameraPosition.position.longitude
+                            )
+                        )
+                        .build(), this@ActivityLocateMeDemo
+                )
+
+
+ override fun onSearchResult(results: ArrayList<Place>) {
+        Log.d("TAG", "onSearchResult: $results")
+        if (isSearch) {
+            populateListView(results)
+            isSearch = false
+        } else {
+            binding.tvFullAdd.text = results[0].address
+        }
+    }
 ```
 
 ## Screenshots
