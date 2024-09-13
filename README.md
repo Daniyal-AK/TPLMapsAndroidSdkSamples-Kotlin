@@ -99,7 +99,96 @@ Here is an overview of the flow for adding UI controls (Compass, Zoom Controls, 
 
 ```kotlin
 mMapView.setOnMapClickListener {
-    // Handle map click
+            when (listenerType) {
+            ListenerType.CLICK_SINGLE -> if (mMapController != null) {
+                mMapController!!.setOnMapClickListener(if (register) MapController.OnMapClickListener { lngLat: LngLat ->
+                    binding.tvListener.text = getString(R.string.click_map)
+                    val text = roundDecimalsUpTo(lngLat.latitude, 4)
+                        .toString() + ", " + roundDecimalsUpTo(lngLat.longitude, 4)
+                    binding.tvValue.text = text
+                } else null)
+            }
+
+            ListenerType.CLICK_DOUBLE -> if (mMapController != null) {
+                mMapController!!.setOnMapDoubleClickListener(if (register) DoubleTapResponder { x: Float, y: Float ->
+                    val lngLat = mMapController!!.screenPositionToLngLat(
+                        PointF(x, y)
+                    )
+                    binding.tvListener.text = getString(R.string.click_double_map)
+                    val text = roundDecimalsUpTo(lngLat.latitude, 4)
+                        .toString() + ", " + roundDecimalsUpTo(lngLat.longitude, 4)
+                    binding.tvValue.text = text
+                    false
+                } else null)
+            }
+
+            ListenerType.CLICK_LONG -> if (mMapController != null) {
+                mMapController!!.setOnMapLongClickListener(if (register) LongPressResponder { x: Float, y: Float ->
+                    val lngLat = mMapController!!.screenPositionToLngLat(
+                        PointF(x, y)
+                    )
+                    binding.tvListener.text = getString(R.string.click_long_map)
+                    val text = roundDecimalsUpTo(lngLat.latitude, 4)
+                        .toString() + ", " + roundDecimalsUpTo(lngLat.longitude, 4)
+                    binding.tvValue.text = text
+                } else null)
+            }
+
+            ListenerType.PAN -> if (mMapController != null) {
+                mMapController!!.setOnMapPanListener(if (register) object : PanResponder {
+                    override fun onPan(
+                        startX: Float,
+                        startY: Float,
+                        endX: Float,
+                        endY: Float
+                    ): Boolean {
+                        binding.tvListener.text = getString(R.string.gesture_pan_map)
+                        binding.tvValue.text = ""
+                        return false
+                    }
+
+                    override fun onFling(
+                        posX: Float,
+                        posY: Float,
+                        velocityX: Float,
+                        velocityY: Float
+                    ): Boolean {
+                        binding.tvListener.text = getString(R.string.gesture_fling_map)
+                        binding.tvValue.text = ""
+                        return false
+                    }
+                } else null)
+            }
+
+            ListenerType.ROTATE -> if (mMapController != null) {
+                mMapController!!.setOnMapRotateListener(if (register) RotateResponder { x: Float, y: Float, rotation: Float ->
+                    binding.tvListener.text = getString(R.string.gesture_rotate_map)
+                    val valueRotation = "Rotation: " + roundDecimalsUpTo(rotation.toDouble(), 2)
+                    binding.tvValue.text = valueRotation
+                    false
+                } else null)
+            }
+
+            ListenerType.SCALE -> {}
+            ListenerType.SHOVE -> {}
+            ListenerType.POI -> if (mMapController != null) {
+                mMapController!!.setOnPoiClickListener(if (register) MapController.OnPoiClickListener { place: PointOfInterest ->
+                    val lngLat = mMapController!!.screenPositionToLngLat(
+                        PointF(
+                            place.lngLat.longitude.toFloat(),
+                            place.lngLat.latitude.toFloat()
+                        )
+                    )
+                    binding.tvListener.text = getString(R.string.click_poi)
+                    val text = (place.name + ", " + roundDecimalsUpTo(lngLat.latitude, 4)
+                            + ", " + roundDecimalsUpTo(lngLat.longitude, 4))
+                    binding.tvValue.text = text
+                } else null)
+            }
+
+            null -> TODO()
+        }
+
 }
 ```
 
