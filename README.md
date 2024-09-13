@@ -72,7 +72,25 @@ Here is an overview of the flow for adding UI controls (Compass, Zoom Controls, 
 - Useful for guiding users to specific areas of interest or fitting content within the viewport.
 
 ```kotlin
-mapController.zoomToBounds()
+  // Camera Change (ChangeStart, Change, ChangeEnd) listeners
+        mapController.setOnCameraChangeStartedListener {
+            Log.i(
+                TAG,
+                "Camera Change Started"
+            )
+        }
+        mapController.setOnCameraChangeListener {
+            Log.i(
+                TAG,
+                "Camera Changing"
+            )
+        }
+        mapController.setOnCameraChangeEndListener { cameraPosition: CameraPosition ->
+            Log.i(
+                TAG,
+                "Camera Change End: $cameraPosition"
+            )
+        }
 ```
 
 ### 5. **Map Gestures**
